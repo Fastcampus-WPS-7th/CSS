@@ -25,8 +25,14 @@ ul {
 .modified-date {
   text-align: right;
 }
+/* 화살표 이미지와 링크를 가지는 컨테이너의 자식들이 수직중앙정렬이 되도록 함 */
+div.link-internal-container > * {
+  /* inline또는 inline-block요소에만 적용 */
+  vertical-align: middle;
+}
 /* 화살표 모양 이미지 */
 img.arrow {
   width: 21px;
   height: 21px;
+  margin-right: 4px;
 }
