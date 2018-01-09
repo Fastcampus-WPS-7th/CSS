@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+      border: 3px solid black;
+      margin-bottom: 10px;
+    }
+    .adjacent-sibling > h1 + ul {
+      background-color: LightBlue;
+      color: DarkBlue;
+    }
+    .general-sibling > h1 ~ ul {
+      background-color: LightBlue;
+      color: DarkBlue;
+    }
+  </style>
+</head>
+<body>
+  <div class="adjacent-sibling">
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+    </ul>
+    <h1>Adjacent</h1>
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+    </ul>
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+    </ul>
+  </div>
+  
+  <div class="general-sibling">
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+    </ul>
+    <h1>General</h1>
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+    </ul>
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+    </ul>
+  </div>
+</body>
+</html>
