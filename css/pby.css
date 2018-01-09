@@ -1,0 +1,22 @@
+html {
+  font-size: 16px;
+}
+html, body {
+  /* rem은 문서의 가장 최상단 폰트사이즈를 기준으로 동작 */
+  /* em은 자신의 부모요소의 폰트사이즈를 기준으로 동작 */
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #373a3c;
+}
+/* a요소의 색상을 재정의하고, underline을 없앤다 */
+a {
+  color: #0275d8;
+  text-decoration: none;
+}
+/* a요소에 hover했을때만 밑줄이 생김 */
+a:hover {
+  text-decoration: underline;
+}
+.modified-date {
+  text-align: right;
+}
