@@ -48,7 +48,9 @@ img.arrow {
 
 /* 메인 테이블의 스타일 */
 table.wiki-table {
+  /* 가운데 정렬위한 마진 설정 */
   margin: 0 auto;
+  /* 최대크기 제한 */
   max-width: 600px;
   border-collapse: collapse;
   background-color: #f5f5f5;
@@ -57,6 +59,7 @@ table.wiki-table td {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 5px 10px;
+  /* 내용의 줄바꿈을 적용 */
   white-space: pre-line;
 }
 /* 테이블의 모든 tr요소들의 자식 td중 첫 번째에만 적용 */
@@ -66,5 +69,6 @@ table.wiki-table tr > td:first-child {
   color: #fff;
 }
 table.wiki-table tr:first-child > td {
+  /* 지정한 배경색이 아닌 부모가 가진 값을 상속받아 사용 */
   background-color: inherit;
 }
