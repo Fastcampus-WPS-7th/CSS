@@ -30,6 +30,10 @@ img {
 .modified-date {
   text-align: right;
 }
+/* 링크의 아래쪽에 마진 추가 */
+div.link-internal-container {
+  margin-bottom: 10px;
+}
 /* 화살표 이미지와 링크를 가지는 컨테이너의 자식들이 수직중앙정렬이 되도록 함 */
 div.link-internal-container > * {
   /* inline또는 inline-block요소에만 적용 */
@@ -44,14 +48,23 @@ img.arrow {
 
 /* 메인 테이블의 스타일 */
 table.wiki-table {
+  margin: 0 auto;
+  max-width: 600px;
   border-collapse: collapse;
+  background-color: #f5f5f5;
 }
 table.wiki-table td {
   border: 1px solid #dddddd;
   text-align: center;
+  padding: 5px 10px;
+  white-space: pre-line;
 }
 /* 테이블의 모든 tr요소들의 자식 td중 첫 번째에만 적용 */
-table.wiki-table tr > td:nth-of-type(1) {
+/* table.wiki-table tr > td:nth-of-type(1) { */
+table.wiki-table tr > td:first-child {
   background-color: #b38b6e;
   color: #fff;
+}
+table.wiki-table tr:first-child > td {
+  background-color: inherit;
 }
