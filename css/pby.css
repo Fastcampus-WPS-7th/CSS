@@ -17,6 +17,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/* ul요소의 패딩을 재정의 */
+ul {
+  padding-left: 20px;
+}
+/* 최근 수정 시각 */
 .modified-date {
   text-align: right;
+}
+/* 화살표 모양 이미지 */
+img.arrow {
+  width: 21px;
+  height: 21px;
 }
