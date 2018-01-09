@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .descendant ul {
+    border: 1px solid black;
+  }
+  .child > ul {
+    border: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+  <div class="descendant">
+    <ul>
+      <li>Chapter1</li>
+      <li>Chapter2</li>
+      <li>Chapter3</li>
+      <ul>
+        <li>SubChapter3-1</li>
+        <li>SubChapter3-2</li>
+      </ul>
+    </ul>
+  </div>
+  
+  <div class="child">
+    <ul>
+      <li>Chapter1</li>
+      <li>Chapter2</li>
+      <li>Chapter3</li>
+      <ul>
+        <li>SubChapter3-1</li>
+        <li>SubChapter3-2</li>
+      </ul>
+    </ul>
+  </div>
+</body>
+</html>
