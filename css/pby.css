@@ -21,6 +21,11 @@ a:hover {
 ul {
   padding-left: 20px;
 }
+/* img요소의 최대크기를 재정의 */
+img {
+  max-width: 100%;
+}
+
 /* 최근 수정 시각 */
 .modified-date {
   text-align: right;
@@ -35,4 +40,18 @@ img.arrow {
   width: 21px;
   height: 21px;
   margin-right: 4px;
+}
+
+/* 메인 테이블의 스타일 */
+table.wiki-table {
+  border-collapse: collapse;
+}
+table.wiki-table td {
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+/* 테이블의 모든 tr요소들의 자식 td중 첫 번째에만 적용 */
+table.wiki-table tr > td:nth-of-type(1) {
+  background-color: #b38b6e;
+  color: #fff;
 }
