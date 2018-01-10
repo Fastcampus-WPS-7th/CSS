@@ -9,21 +9,24 @@ html, body {
   margin: 0;
   padding: 0;
 }
+// 헤더의 상단 부분 (메뉴, 로고, 구독, 검색아이콘)
 .header-top {
   width: 100%;
   position: relative;
-  text-align: center;
+  
+  // 상단 왼쪽부분, absolute포지션으로 부모기준 좌측으로 정렬
   .header-top-left {
     display: inline-block;
     position: absolute;
     left: 0;
     top: 0;
   }
+  // 상단 중앙 부분, 블럭요소에 margin: 0 auto;로 가운데 정렬
   .header-top-center {
-    // display: inline-block;
-    // position: relative;
     margin: 0 auto;
+    text-align: center;
   }
+  // 상단 오른쪽부분, absolute포지션으로 부모기준 우측으로 정렬
   .header-top-right {
     display: inline-block;
     position: absolute;
