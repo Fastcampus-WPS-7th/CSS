@@ -86,3 +86,20 @@ div.toc {
   padding: 0 20px 18px 12px;
   max-width: 400px;
 }
+
+/* 인용문 */
+blockquote.wiki-quote {
+  border: 2px dashed #ccc;
+  border-left: 5px solid #71BC6D;
+  white-space: pre-line;
+  background-color: #eee;
+  padding: 12px;
+  margin-left: 0;
+  background-image: url('../images/quote.png');
+  background-repeat: no-repeat;
+  background-position: 98% 2%;
+  background-size: 25px;
+}
+blockquote.wiki-quote p {
+  margin: 0;
+}
