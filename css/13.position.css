@@ -14,9 +14,12 @@ div {
   background-color: yellow;
 }
 .absolute {
+  position: absolute;
   width: 30px;
   height: 30px;
   background-color: black;
+  left: -50px;
+  top: 0;
 }
 .relative1 {
   position: relative;
