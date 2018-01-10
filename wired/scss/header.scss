@@ -1,7 +1,7 @@
-
 // 헤더의 상단 부분 (메뉴, 로고, 구독, 검색아이콘)
 .header-top {
   width: 100%;
+  height: 60px;
   position: relative;
   
   // 상단 왼쪽부분, absolute포지션으로 부모기준 좌측으로 정렬
@@ -10,6 +10,15 @@
     position: absolute;
     left: 0;
     top: 0;
+    height: 60px;
+    
+    // a요소는 기본적으로 inline요소이기 때문에 height값을 가질 수 없음
+    // height를 주려면 inline-block으로 display속성 변경
+    a.menu {
+      display: inline-block;
+      height: 60px;
+      text-decoration: none;
+    }
   }
   // 상단 중앙 부분, 블럭요소에 margin: 0 auto;로 가운데 정렬
   .header-top-center {
@@ -22,5 +31,35 @@
     position: absolute;
     right: 0;
     top: 0;
+  }
+}
+
+.header-nav {
+  > ul {
+    > li {
+      $border-value: 1px solid #ccc;
+      // 수평 배열을 위한 float정의
+      float: left;
+      
+      // 7개 아이템이 100%를 차지하도록 width정의
+      width: calc(100% / 7);
+      box-sizing: border-box;
+      
+      // 회색 테두리
+      border-top: $border-value;
+      border-bottom: $border-value;
+      border-right: $border-value;
+      
+      // 아이템의 가운데정렬, 글자크기/색상, 내부 패딩
+      text-align: center;
+      font-size: 9px;
+      color: #666;
+      padding: 4px 0;
+      
+      // 마지막 li는 오른쪽 테두리를 갖지 않도록 함
+      &:last-child {
+        border-right: none;
+      }
+    }
   }
 }

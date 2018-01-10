@@ -1,5 +1,6 @@
 .header-top {
   width: 100%;
+  height: 60px;
   position: relative;
 }
 
@@ -8,6 +9,13 @@
   position: absolute;
   left: 0;
   top: 0;
+  height: 60px;
+}
+
+.header-top .header-top-left a.menu {
+  display: inline-block;
+  height: 60px;
+  text-decoration: none;
 }
 
 .header-top .header-top-center {
@@ -20,4 +28,21 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.header-nav > ul > li {
+  float: left;
+  width: calc(100% / 7);
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  font-size: 9px;
+  color: #666;
+  padding: 4px 0;
+}
+
+.header-nav > ul > li:last-child {
+  border-right: none;
 }
