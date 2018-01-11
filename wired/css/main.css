@@ -1,6 +1,6 @@
 .main {
   max-width: 932px;
-  margin: 0 auto;
+  margin: 16px auto 0;
 }
 
 .main .card {
@@ -8,6 +8,7 @@
   padding: 16px;
   box-sizing: border-box;
   border-top: 3px solid #000;
+  margin: 0 16px 16px 0;
 }
 
 .main .card img {
@@ -29,20 +30,19 @@
 
 .main > section.popular > .popular-left {
   width: 632px;
-  height: 300px;
   float: left;
 }
 
 .main > section.popular > .popular-left > .row1 > .col1 {
-  width: 60%;
+  width: calc(100% / 3 * 2 - 16px);
   float: left;
+  height: 330px;
 }
 
 .main > section.popular > .popular-left > .row1 > .col2 {
-  width: 40%;
+  width: calc(100% / 3 - 16px);
   float: left;
-  height: 100px;
-  background-color: yellow;
+  height: 330px;
 }
 
 .main > section.popular > .popular-left > .row2 > .col1 {
