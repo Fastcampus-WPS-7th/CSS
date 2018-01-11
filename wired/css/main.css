@@ -28,6 +28,26 @@
   font-size: 10px;
 }
 
+.main .card.right-image {
+  height: 160px;
+}
+
+.main .card.right-image img {
+  width: inherit;
+  height: 100%;
+  float: right;
+}
+
+.main .card.left-image {
+  height: 160px;
+}
+
+.main .card.left-image img {
+  width: inherit;
+  height: 100%;
+  float: left;
+}
+
 .main > section.popular > .popular-left {
   width: 632px;
   float: left;
@@ -47,19 +67,7 @@
 
 .main > section.popular > .popular-left > .row2 > .col1 {
   width: 50%;
-  height: 100px;
   float: left;
-  background-color: yellow;
-}
-
-.main > section.popular > .popular-left > .row2 > .col1 > .row1 {
-  height: 50%;
-  background-color: orange;
-}
-
-.main > section.popular > .popular-left > .row2 > .col1 > .row2 {
-  height: 50%;
-  background-color: purple;
 }
 
 .main > section.popular > .popular-left > .row2 > .col2 {

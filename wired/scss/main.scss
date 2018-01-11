@@ -51,6 +51,26 @@ $card-margin: 16px;
   .author {
     font-size: 10px;
   }
+  // 이미지가 오른쪽에 있는 카드의 경우
+  &.right-image {
+    height: 160px;
+    
+    & img {
+      width: inherit;
+      height: 100%;
+      float: right;
+    }
+  }
+  
+  &.left-image {
+    height: 160px;
+    
+    & img {
+      width: inherit;
+      height: 100%;
+      float: left;
+    }
+  }
 }
 
 .main > section.popular {
@@ -75,16 +95,12 @@ $card-margin: 16px;
     > .row2 {
       > .col1 {
         width: 50%;
-        height: 100px;
         float: left;
-        background-color: yellow;
         > .row1 {
-          height: 50%;
-          background-color: orange;
+          
         }
         > .row2 {
-          height: 50%;
-          background-color: purple;
+          
         }
       }
       > .col2 {
