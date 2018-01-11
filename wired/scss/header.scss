@@ -8,6 +8,14 @@
   // (header-top-left, center, right)은 높이 60px
   & > * {
     height: 60px;
+    
+    // header-top의 모든 자식의 하위 a요소에 대한 공통 설정
+    // a요소는 기본적으로 inline요소이기 때문에 height값을 가질 수 없음
+    // height를 주려면 inline-block으로 display속성 변경
+    a {
+      display: inline-block;
+      text-decoration: none;
+    }
   }
   
   // 상단 왼쪽부분, absolute포지션으로 부모기준 좌측으로 정렬
@@ -17,13 +25,6 @@
     left: 0;
     top: 0;
     font-size: 0;
-    
-    // a요소는 기본적으로 inline요소이기 때문에 height값을 가질 수 없음
-    // height를 주려면 inline-block으로 display속성 변경
-    a.menu {
-      display: inline-block;
-      text-decoration: none;
-    }
   }
   // 상단 중앙 부분, 블럭요소에 margin: 0 auto;로 가운데 정렬
   .header-top-center {
