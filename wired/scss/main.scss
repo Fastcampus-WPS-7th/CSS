@@ -2,31 +2,31 @@ $card-margin: 16px;
 
 .main {
   max-width: 932px;
-  margin: 16px auto 0;
+  // margin: 16px auto 0;
 }
-.main .card {
-  border-top: 3px solid #000;
-  padding: 16px;
-  box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
-  box-sizing: border-box;
-  margin-right: $card-margin;
-  
-  img {
-    max-width: 100%;
-  }
-  > .topic, .author {
-    color: rgba(0,0,0,0.6);
-  }
-  > .topic {
-    margin-bottom: 3px;
-  }
-  > .title {
-    font-size: 18px;
-    font-family: 'Futura';
-    line-height: 1.2;
-    margin-bottom: 3px;
-  }
-}
+// .main .card {
+//   border-top: 3px solid #000;
+//   padding: 16px;
+//   box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
+//   box-sizing: border-box;
+//   margin-right: $card-margin;
+// 
+//   img {
+//     max-width: 100%;
+//   }
+//   > .topic, .author {
+//     color: rgba(0,0,0,0.6);
+//   }
+//   > .topic {
+//     margin-bottom: 3px;
+//   }
+//   > .title {
+//     font-size: 18px;
+//     font-family: 'Futura';
+//     line-height: 1.2;
+//     margin-bottom: 3px;
+//   }
+// }
 
 .main > section.popular {
   > .popular-left {
@@ -36,11 +36,11 @@ $card-margin: 16px;
     
     > .row1 {
       > .col1 {
-        width: calc(66% - #{$card-margin});
+        width: 60%;
         float: left;
       }
       > .col2 {
-        width: calc(34% - #{$card-margin});
+        width: 40%;
         float: left;
       }
     }
