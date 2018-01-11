@@ -22,6 +22,7 @@
 .main .card .title {
   font-size: 18px;
   font-family: 'Futura';
+  line-height: 1.2;
 }
 
 .main .card .author {
@@ -42,9 +43,15 @@
   height: 160px;
 }
 
+.main .card.left-image .title {
+  max-height: 86px;
+  overflow: hidden;
+}
+
 .main .card.left-image img {
-  width: inherit;
-  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
+  margin-right: 10px;
   float: left;
 }
 
@@ -71,10 +78,9 @@
 }
 
 .main > section.popular > .popular-left > .row2 > .col2 {
-  width: 50%;
-  height: 100px;
+  width: calc(50% - 16px);
+  height: 336px;
   float: left;
-  background-color: green;
 }
 
 .main > section.popular > .popular-left > .row3 {

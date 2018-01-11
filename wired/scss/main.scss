@@ -47,6 +47,7 @@ $card-margin: 16px;
   .title {
     font-size: 18px;
     font-family: 'Futura';
+    line-height: 1.2;
   }
   .author {
     font-size: 10px;
@@ -65,9 +66,17 @@ $card-margin: 16px;
   &.left-image {
     height: 160px;
     
+    // 이미지가 좌측일 경우 
+    // 제목이 세로로 너무 길어지지 않도록 max-height지정
+    .title {
+      max-height: 86px;
+      overflow: hidden;
+    }
+    
     & img {
-      width: inherit;
-      height: 100%;
+      max-width: 50%;
+      max-height: 100%;
+      margin-right: 10px;
       float: left;
     }
   }
@@ -96,18 +105,11 @@ $card-margin: 16px;
       > .col1 {
         width: 50%;
         float: left;
-        > .row1 {
-          
-        }
-        > .row2 {
-          
-        }
       }
       > .col2 {
-        width: 50%;
-        height: 100px;
+        width: calc(50% - #{$card-margin});
+        height: 336px;
         float: left;
-        background-color: green;
       }
     }
     > .row3 {
