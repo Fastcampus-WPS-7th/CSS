@@ -22,7 +22,7 @@
   .header-top-left {
     display: inline-block;
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 0;
     font-size: 0;
   }
@@ -30,13 +30,22 @@
   .header-top-center {
     margin: 0 auto;
     text-align: center;
+    
+    // a요소 안에 있는 img는 가로크기 160px을 갖도록 함
+    a.logo > img {
+      width: 160px;
+    }
   }
   // 상단 오른쪽부분, absolute포지션으로 부모기준 우측으로 정렬
   .header-top-right {
     display: inline-block;
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 0;
+    
+    a.subscribe {
+      font-size: 10px;
+    }
   }
 }
 
