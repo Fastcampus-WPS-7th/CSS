@@ -24,6 +24,35 @@
   background-color: yellow;
 }
 
+.main > section.popular > .popular-left > .row2 > .col1 {
+  width: 50%;
+  height: 100px;
+  float: left;
+  background-color: yellow;
+}
+
+.main > section.popular > .popular-left > .row2 > .col1 > .row1 {
+  height: 50%;
+  background-color: orange;
+}
+
+.main > section.popular > .popular-left > .row2 > .col1 > .row2 {
+  height: 50%;
+  background-color: purple;
+}
+
+.main > section.popular > .popular-left > .row2 > .col2 {
+  width: 50%;
+  height: 100px;
+  float: left;
+  background-color: green;
+}
+
+.main > section.popular > .popular-left > .row3 {
+  height: 100px;
+  background-color: lightblue;
+}
+
 .main > section.popular > .popular-right {
   width: 300px;
   height: 300px;

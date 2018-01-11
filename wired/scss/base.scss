@@ -20,6 +20,7 @@ a {
   text-decoration: none;
 }
 
+// 수직 중앙 정렬을 위한 유틸리티 클래스
 .middle-parent:before {
   content: '';
   display: inline-block;
@@ -29,4 +30,12 @@ a {
 }
 .middle-child {
   vertical-align: middle;
+}
+
+// 자식이 모두 float속성을 가진 부모를 위한 유틸리티 클래스
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
 }

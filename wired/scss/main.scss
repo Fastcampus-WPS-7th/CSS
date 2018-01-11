@@ -24,6 +24,32 @@
         background-color: yellow;
       }
     }
+    > .row2 {
+      > .col1 {
+        width: 50%;
+        height: 100px;
+        float: left;
+        background-color: yellow;
+        > .row1 {
+          height: 50%;
+          background-color: orange;
+        }
+        > .row2 {
+          height: 50%;
+          background-color: purple;
+        }
+      }
+      > .col2 {
+        width: 50%;
+        height: 100px;
+        float: left;
+        background-color: green;
+      }
+    }
+    > .row3 {
+      height: 100px;
+      background-color: lightblue;
+    }
   }
   > .popular-right {
     width: 300px;

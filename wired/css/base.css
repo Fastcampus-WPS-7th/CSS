@@ -34,3 +34,10 @@ a {
 .middle-child {
   vertical-align: middle;
 }
+
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
