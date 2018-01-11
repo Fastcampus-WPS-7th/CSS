@@ -50,6 +50,14 @@
 }
 
 .header-nav {
+  // 자식요소들이 모두 float속성을 가지기 때문에
+  // clear: both속성의 임의의 가상요소 삽입
+  &:after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+  }
   > ul {
     > li {
       $border-value: 1px solid #ccc;
