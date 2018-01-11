@@ -1,5 +1,30 @@
 .main {
   max-width: 932px;
+  margin: 0 auto;
+}
+
+.main .card {
+  box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.23);
+  padding: 16px;
+  box-sizing: border-box;
+  border-top: 3px solid #000;
+}
+
+.main .card img {
+  width: 100%;
+}
+
+.main .card .topic {
+  font-size: 10px;
+}
+
+.main .card .title {
+  font-size: 18px;
+  font-family: 'Futura';
+}
+
+.main .card .author {
+  font-size: 10px;
 }
 
 .main > section.popular > .popular-left {
@@ -16,6 +41,8 @@
 .main > section.popular > .popular-left > .row1 > .col2 {
   width: 40%;
   float: left;
+  height: 100px;
+  background-color: yellow;
 }
 
 .main > section.popular > .popular-left > .row2 > .col1 {

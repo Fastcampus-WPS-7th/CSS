@@ -2,7 +2,7 @@ $card-margin: 16px;
 
 .main {
   max-width: 932px;
-  // margin: 16px auto 0;
+  margin: 0 auto;
 }
 // .main .card {
 //   border-top: 3px solid #000;
@@ -27,6 +27,30 @@ $card-margin: 16px;
 //     margin-bottom: 3px;
 //   }
 // }
+.main .card {
+  // 그림자 효과
+  box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
+  // 카드의 내부 패딩
+  padding: 16px;
+  // 내부 패딩과 보더를 포함한 가로/세로크기를 갖도록 함
+  box-sizing: border-box;
+  // 상단 3픽셀 검정 외곽선
+  border-top: 3px solid #000;
+  
+  img {
+    width: 100%;
+  }
+  .topic {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 18px;
+    font-family: 'Futura';
+  }
+  .author {
+    font-size: 10px;
+  }
+}
 
 .main > section.popular {
   > .popular-left {
@@ -38,10 +62,13 @@ $card-margin: 16px;
       > .col1 {
         width: 60%;
         float: left;
+        
       }
       > .col2 {
         width: 40%;
         float: left;
+        height: 100px;
+        background-color: yellow;
       }
     }
     > .row2 {
