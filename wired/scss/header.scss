@@ -4,19 +4,24 @@
   height: 60px;
   position: relative;
   
+  // header-top의 모든 자식들
+  // (header-top-left, center, right)은 높이 60px
+  & > * {
+    height: 60px;
+  }
+  
   // 상단 왼쪽부분, absolute포지션으로 부모기준 좌측으로 정렬
   .header-top-left {
     display: inline-block;
     position: absolute;
     left: 0;
     top: 0;
-    height: 60px;
+    font-size: 0;
     
     // a요소는 기본적으로 inline요소이기 때문에 height값을 가질 수 없음
     // height를 주려면 inline-block으로 display속성 변경
     a.menu {
       display: inline-block;
-      height: 60px;
       text-decoration: none;
     }
   }

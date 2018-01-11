@@ -4,17 +4,20 @@
   position: relative;
 }
 
+.header-top > * {
+  height: 60px;
+}
+
 .header-top .header-top-left {
   display: inline-block;
   position: absolute;
   left: 0;
   top: 0;
-  height: 60px;
+  font-size: 0;
 }
 
 .header-top .header-top-left a.menu {
   display: inline-block;
-  height: 60px;
   text-decoration: none;
 }
 
