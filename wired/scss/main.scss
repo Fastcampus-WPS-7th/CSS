@@ -1,3 +1,4 @@
+@import 'variables';
 $card-margin: 16px;
 
 .main {
@@ -119,16 +120,40 @@ $card-margin: 16px;
   }
   > .popular-right {
     width: 300px;
-    background-color: blue;
     float: left;
+    margin: 0;
+    padding: 0;
+    
+    // 카드형태 요소 내부의 ul의 제목에 대한 스타일
+    h2.card-ul-title {
+      font-size: 24px;
+      padding: 16px;
+      margin: 0;
+    }
     
     > ul {
+      // 리스트 자체에는 좌우 패딩만
+      padding: 0 16px;  
+      border-top: 1px solid #ccc;
+      
       > li {
-        border-bottom: 1px solid black;
-        height: 100px;
+        border-bottom: 1px solid #ccc;
+        height: 75px;
+        // 리스트 아이템에는 상하 패딩만
+        padding: 16px 0;
         
-        &:first-child {
-          border-top: 1px solid black;
+        img {
+          float: left;
+          width: 75px;
+          height: 75px;
+          margin-right: 16px;
+        }
+        .title {
+          font-size: 13px;
+          @include max-line(3);
+        }
+        .author {
+          @include max-line(1);
         }
       }
     }
