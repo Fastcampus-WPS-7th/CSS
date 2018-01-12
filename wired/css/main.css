@@ -15,6 +15,7 @@
   box-sizing: border-box;
   border-top: 3px solid #000;
   margin: 0 16px 16px 0;
+  transition: transform 0.15s cubic-bezier(0.33, 0.66, 0.66, 1), -webkit-transform 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
 .main .card img {
@@ -63,6 +64,11 @@
   max-height: 100%;
   margin-right: 10px;
   float: left;
+}
+
+.main .card:hover {
+  box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.16), 2px 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.23);
+  transform: translateY(-3px);
 }
 
 a.more {
