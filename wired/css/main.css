@@ -159,7 +159,7 @@ a.more img.arrow {
   overflow: hidden;
 }
 
-.main > section.last-videos .title-container {
+.main > section.last-videos {
   position: relative;
 }
 
@@ -170,6 +170,17 @@ a.more img.arrow {
 
 .main > section.last-videos .title-container a.more {
   position: absolute;
-  right: 0;
-  top: 0;
+  padding-right: 20px;
+  right: 20px;
+  bottom: 0;
+}
+
+.main > section.last-videos .content .video-left {
+  float: left;
+  width: 80%;
+}
+
+.main > section.last-videos .content .video-right {
+  float: left;
+  width: 20%;
 }
