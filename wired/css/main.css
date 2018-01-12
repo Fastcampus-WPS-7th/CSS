@@ -1,6 +1,7 @@
 .main {
   max-width: 932px;
   margin: 16px auto 0;
+  padding-bottom: 60px;
 }
 
 .main .card {
@@ -27,6 +28,10 @@
 
 .main .card .author {
   font-size: 10px;
+}
+
+.main .card.bold-top {
+  border-top-width: 10px;
 }
 
 .main .card.right-image {
@@ -104,12 +109,17 @@
 .main > section.popular > .popular-right > ul {
   padding: 0 16px;
   border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .main > section.popular > .popular-right > ul > li {
   border-bottom: 1px solid #ccc;
   height: 75px;
   padding: 16px 0;
+}
+
+.main > section.popular > .popular-right > ul > li:last-child {
+  border: none;
 }
 
 .main > section.popular > .popular-right > ul > li img {
@@ -132,4 +142,19 @@
   -webkit-line-clamp: 1;
   display: -webkit-box;
   overflow: hidden;
+}
+
+.main > section.popular > .popular-right > a.more {
+  display: inline-block;
+  padding: 16px;
+}
+
+.main > section.popular > .popular-right > a.more > * {
+  vertical-align: middle;
+}
+
+.main > section.popular > .popular-right > a.more img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
 }

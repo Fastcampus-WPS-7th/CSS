@@ -4,30 +4,8 @@ $card-margin: 16px;
 .main {
   max-width: 932px;
   margin: $card-margin auto 0;
+  padding-bottom: 60px;
 }
-// .main .card {
-//   border-top: 3px solid #000;
-//   padding: 16px;
-//   box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
-//   box-sizing: border-box;
-//   margin-right: $card-margin;
-// 
-//   img {
-//     max-width: 100%;
-//   }
-//   > .topic, .author {
-//     color: rgba(0,0,0,0.6);
-//   }
-//   > .topic {
-//     margin-bottom: 3px;
-//   }
-//   > .title {
-//     font-size: 18px;
-//     font-family: 'Futura';
-//     line-height: 1.2;
-//     margin-bottom: 3px;
-//   }
-// }
 .main .card {
   // 그림자 효과
   box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
@@ -53,6 +31,12 @@ $card-margin: 16px;
   .author {
     font-size: 10px;
   }
+  
+  // 굵은 border-top이 필요한 경우
+  &.bold-top {
+    border-top-width: 10px;
+  }
+  
   // 이미지가 오른쪽에 있는 카드의 경우
   &.right-image {
     height: 160px;
@@ -135,12 +119,19 @@ $card-margin: 16px;
       // 리스트 자체에는 좌우 패딩만
       padding: 0 16px;  
       border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       
       > li {
         border-bottom: 1px solid #ccc;
         height: 75px;
         // 리스트 아이템에는 상하 패딩만
         padding: 16px 0;
+        
+        // 리스트 하단에 border가 있으므로
+        // 마지막 자식은 border속성을 없앰
+        &:last-child {
+          border: none;
+        }
         
         img {
           float: left;
@@ -155,6 +146,23 @@ $card-margin: 16px;
         .author {
           @include max-line(1);
         }
+      }
+    }
+    > a.more {
+      // 자식요소들의 높이를 자신의 높이로 갖기 위해
+      // inline-block설정
+      display: inline-block;
+      padding: 16px;
+      
+      // 모든 자식들(인라인 요소)간의 정렬은 수직 중앙 정렬
+      > * {
+        vertical-align: middle;
+      }
+      
+      img {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
       }
     }
   }
