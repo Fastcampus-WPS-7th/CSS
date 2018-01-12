@@ -26,7 +26,7 @@
   } 
   > ul.footer-link-list {
     font-size: 0;
-    margin: 0 32px;
+    margin: 0 32px 32px;
     
     > li.footer-link {
       display: inline-block;
@@ -39,5 +39,16 @@
         border-right: none;
       }
     }
+  }
+  > p.policy-title {
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  > p.policy-content {
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    margin: 0 32px;
+    line-height: 20px;
   }
 }

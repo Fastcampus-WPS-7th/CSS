@@ -28,7 +28,7 @@
 
 .main-footer > ul.footer-link-list {
   font-size: 0;
-  margin: 0 32px;
+  margin: 0 32px 32px;
 }
 
 .main-footer > ul.footer-link-list > li.footer-link {
@@ -41,4 +41,17 @@
 
 .main-footer > ul.footer-link-list > li.footer-link:last-child {
   border-right: none;
+}
+
+.main-footer > p.policy-title {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.main-footer > p.policy-content {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  margin: 0 32px;
+  line-height: 20px;
 }
