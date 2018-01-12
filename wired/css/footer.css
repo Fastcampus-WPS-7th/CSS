@@ -25,3 +25,20 @@
 .main-footer > .social-container > img:last-child {
   margin-right: 0;
 }
+
+.main-footer > ul.footer-link-list {
+  font-size: 0;
+  margin: 0 32px;
+}
+
+.main-footer > ul.footer-link-list > li.footer-link {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+  font-size: 10px;
+  padding: 0 6px;
+  margin-bottom: 4px;
+}
+
+.main-footer > ul.footer-link-list > li.footer-link:last-child {
+  border-right: none;
+}

@@ -23,5 +23,21 @@
         margin-right: 0;
       }
     }
-  }  
+  } 
+  > ul.footer-link-list {
+    font-size: 0;
+    margin: 0 32px;
+    
+    > li.footer-link {
+      display: inline-block;
+      border-right: 1px solid #ccc;
+      font-size: 10px;
+      padding: 0 6px;
+      margin-bottom: 4px;
+      
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
 }
