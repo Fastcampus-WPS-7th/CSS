@@ -159,8 +159,14 @@ a.more img.arrow {
   overflow: hidden;
 }
 
-.main > section.last-videos {
+.main > section.last-videos .card {
+  padding: 0;
+}
+
+.main > section.last-videos .title-container {
+  padding: 16px;
   position: relative;
+  border-bottom: 1px solid #ccc;
 }
 
 .main > section.last-videos .title-container h2.card-title {
@@ -170,17 +176,20 @@ a.more img.arrow {
 
 .main > section.last-videos .title-container a.more {
   position: absolute;
-  padding-right: 20px;
-  right: 20px;
-  bottom: 0;
+  top: 0;
+  right: 16px;
 }
 
 .main > section.last-videos .content .video-left {
   float: left;
   width: 80%;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .main > section.last-videos .content .video-right {
   float: left;
   width: 20%;
+  padding: 16px;
+  box-sizing: border-box;
 }

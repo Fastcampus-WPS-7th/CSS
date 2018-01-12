@@ -169,27 +169,39 @@ a.more {
   }
 }
 .main > section.last-videos {
-  position: relative;
+  .card {
+    // .title-container의 하단에 
+    // 전체 가로 길이만큼의 외곽선이 필요하므로
+    // 패딩을 없애고 자식요소에 각각 따로 패딩 지정
+    padding: 0;
+  }
   .title-container {
+    padding: 16px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    
     h2.card-title {
       font-size: $font-size-big-card-title;
       margin: 0;
     }
     a.more {
       position: absolute;
-      padding-right: 20px;
-      right: 20px;
-      bottom: 0;
+      top: 0;
+      right: 16px;
     }
   }
   .content {
     .video-left {
       float: left;
       width: 80%;
+      padding: 16px;
+      box-sizing: border-box;
     }
     .video-right {
       float: left;
       width: 20%;
+      padding: 16px;
+      box-sizing: border-box;
     }
   }
 }
