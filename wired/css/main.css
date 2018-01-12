@@ -185,6 +185,7 @@ a.more img.arrow {
   width: 80%;
   padding: 16px;
   box-sizing: border-box;
+  border-right: 1px solid #ccc;
 }
 
 .main > section.last-videos .content .video-left video {
@@ -195,5 +196,7 @@ a.more img.arrow {
   float: left;
   width: 20%;
   padding: 16px;
+  height: 462px;
+  overflow-y: auto;
   box-sizing: border-box;
 }

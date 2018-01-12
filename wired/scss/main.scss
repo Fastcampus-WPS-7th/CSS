@@ -196,6 +196,7 @@ a.more {
       width: 80%;
       padding: 16px;
       box-sizing: border-box;
+      border-right: 1px solid #ccc;
       
       video {
         width: 100%;
@@ -205,6 +206,8 @@ a.more {
       float: left;
       width: 20%;
       padding: 16px;
+      height: 462px;
+      overflow-y: auto;
       box-sizing: border-box;
     }
   }
