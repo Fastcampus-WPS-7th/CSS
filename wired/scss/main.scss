@@ -2,12 +2,16 @@
 $card-margin: 16px;
 $font-size-big-card-title: 24px;
 
+#wrap {
+  background-color: #f6f6f6;
+}
 .main {
   max-width: 932px;
   margin: $card-margin auto 0;
   padding-bottom: 60px;
 }
 .main .card {
+  background-color: #fff;
   // 그림자 효과
   box-shadow: -2px 0 2px 0 rgba(0,0,0,0.16), 2px 0 2px 0 rgba(0,0,0,0.16), 0 2px 2px 0 rgba(0,0,0,0.23);
   // 카드의 내부 패딩
