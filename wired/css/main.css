@@ -60,6 +60,21 @@
   float: left;
 }
 
+a.more {
+  display: inline-block;
+  padding: 16px;
+}
+
+a.more > * {
+  vertical-align: middle;
+}
+
+a.more img.arrow {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
 .main > section.popular > .popular-left {
   width: 632px;
   float: left;
@@ -144,17 +159,17 @@
   overflow: hidden;
 }
 
-.main > section.popular > .popular-right > a.more {
-  display: inline-block;
-  padding: 16px;
+.main > section.last-videos .title-container {
+  position: relative;
 }
 
-.main > section.popular > .popular-right > a.more > * {
-  vertical-align: middle;
+.main > section.last-videos .title-container h2.card-title {
+  font-size: 24px;
+  margin: 0;
 }
 
-.main > section.popular > .popular-right > a.more img {
-  width: 32px;
-  height: 32px;
-  margin-right: 8px;
+.main > section.last-videos .title-container a.more {
+  position: absolute;
+  right: 0;
+  top: 0;
 }

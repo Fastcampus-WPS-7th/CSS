@@ -1,5 +1,6 @@
 @import 'variables';
 $card-margin: 16px;
+$font-size-big-card-title: 24px;
 
 .main {
   max-width: 932px;
@@ -66,6 +67,23 @@ $card-margin: 16px;
     }
   }
 }
+a.more {
+  // 자식요소들의 높이를 자신의 높이로 갖기 위해
+  // inline-block설정
+  display: inline-block;
+  padding: 16px;
+  
+  // 모든 자식들(인라인 요소)간의 정렬은 수직 중앙 정렬
+  > * {
+    vertical-align: middle;
+  }
+  
+  img.arrow {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+}
 
 .main > section.popular {
   > .popular-left {
@@ -110,7 +128,7 @@ $card-margin: 16px;
     
     // 카드형태 요소 내부의 ul의 제목에 대한 스타일
     h2.card-ul-title {
-      font-size: 24px;
+      font-size: $font-size-big-card-title;
       padding: 16px;
       margin: 0;
     }
@@ -148,22 +166,20 @@ $card-margin: 16px;
         }
       }
     }
-    > a.more {
-      // 자식요소들의 높이를 자신의 높이로 갖기 위해
-      // inline-block설정
-      display: inline-block;
-      padding: 16px;
-      
-      // 모든 자식들(인라인 요소)간의 정렬은 수직 중앙 정렬
-      > * {
-        vertical-align: middle;
-      }
-      
-      img {
-        width: 32px;
-        height: 32px;
-        margin-right: 8px;
-      }
-    }
   }
+}
+.main > section.last-videos {
+  .title-container {
+    position: relative;
+    h2.card-title {
+      font-size: $font-size-big-card-title;
+      margin: 0;
+    }
+    a.more {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }  
+  }
+  
 }
