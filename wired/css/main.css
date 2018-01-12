@@ -187,6 +187,10 @@ a.more img.arrow {
   box-sizing: border-box;
 }
 
+.main > section.last-videos .content .video-left video {
+  width: 100%;
+}
+
 .main > section.last-videos .content .video-right {
   float: left;
   width: 20%;

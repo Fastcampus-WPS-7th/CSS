@@ -196,6 +196,10 @@ a.more {
       width: 80%;
       padding: 16px;
       box-sizing: border-box;
+      
+      video {
+        width: 100%;
+      }
     }
     .video-right {
       float: left;
